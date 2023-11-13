@@ -9,8 +9,6 @@
       </ul>
       <NotificationIcon />
     </nav>
-    
-    
     <router-view />
   </div>
   <div class="notification-input-container" >
