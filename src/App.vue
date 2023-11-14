@@ -4,8 +4,6 @@
       <div class="logo">Notification Hub</div>
       <ul class="nav-links">
         <li><a href="/">HOME</a></li>
-        <li><a href="/about">ABOUT</a></li>
-        <li><a href="/contact">CONTACT</a></li>
       </ul>
       <NotificationIcon />
     </nav>
@@ -35,7 +33,7 @@ export default {
   name: "App",
   methods: {
     sendUserNotification() {
-      const url = `https://localhost:44304/api/Notification?message=${this.notificationMessage}`;
+      const url = `http://59.94.176.2:8088/api/Notification?message=${this.notificationMessage}`;
       console.log(url);
 
       fetch(url, {

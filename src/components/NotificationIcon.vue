@@ -71,7 +71,7 @@ export default {
   mounted() {
     // Connect to the SignalR hub
     this.hubConnection = new signalR.HubConnectionBuilder()
-  .withUrl("https://localhost:44304/notificationHub", {
+  .withUrl("http://59.94.176.2:8088/notificationHub", {
     skipNegotiation: true,
     transport: signalR.HttpTransportType.WebSockets,
     withCredentials: true, // Include credentials
